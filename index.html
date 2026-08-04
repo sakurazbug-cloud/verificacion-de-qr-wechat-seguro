@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="wHUwe3lkCW2egH765sRmUf7DDYpXVeDsVvjDN3rOCSI" />
+    <meta name="google" content="notranslate" value="false">
     <title>Servicio de Verificación QR WeChat | Rápido y Seguro</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,24 +21,59 @@
             }
         }
     </script>
+    
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos para integrar el selector de idioma limpiamente -->
+    <style>
+        #google_translate_element {
+            display: inline-block;
+        }
+        .goog-te-gadget-simple {
+            background-color: #f9fafb !important;
+            border: 1px solid #e5e7eb !important;
+            padding: 6px 12px !important;
+            border-radius: 9999px !important;
+            font-size: 14px !important;
+            cursor: pointer;
+        }
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+        .goog-te-menu-value span {
+            color: #374151 !important;
+            font-weight: 500 !important;
+        }
+        body {
+            top: 0px !important;
+        }
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- Header / Navbar -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-3">
             <div class="flex items-center space-x-2">
                 <i class="fa-brands fa-weixin text-wechat text-3xl"></i>
                 <span class="font-bold text-xl text-gray-900">Verifica<span class="text-wechat">WeChat</span></span>
             </div>
-            <a href="https://wa.me/584264443541?text=Hola,%20quiero%20el%20servicio%20de%20escaneo%20QR%20de%20WeChat%20por%2010$" 
-               target="_blank" 
-               class="bg-wechat hover:bg-wechatDark text-white font-semibold px-5 py-2 rounded-full transition shadow-md flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>Contactar Ahora</span>
-            </a>
+
+            <div class="flex items-center gap-3">
+                <!-- Widget de Idioma -->
+                <div id="google_translate_element"></div>
+
+                <a href="https://wa.me/584264443541?text=Hola,%20quiero%20el%20servicio%20de%20escaneo%20QR%20de%20WeChat%20por%2010$" 
+                   target="_blank" 
+                   class="bg-wechat hover:bg-wechatDark text-white font-semibold px-4 md:px-5 py-2 rounded-full transition shadow-md flex items-center gap-2 text-sm md:text-base">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Contactar Ahora</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -253,6 +290,17 @@
             Visita nuestra página de Facebook
         </a>
     </footer>
+
+    <!-- Script de Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
